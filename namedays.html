@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svátkový diář</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Narozeniny</a></li>
+            <li><a href="namedays.html">Svátky</a></li>
+          </ul>
+        </nav>
+        <h1>Můj svátkový diář</h1>
+      </header>
+      <main>
+        <!-- today -->
+        <div class="today box">
+          <p class="today__sentence">Dnes slaví svátek:</p>
+          <p class="today__result box__result"></p>
+        </div>
+        <!-- tomorrow -->
+        <div class="tomorrow box">
+          <p class="tomorrow__sentence">Zítra slaví svátek:</p>
+          <p class="tomorrow__result box__result"></p>
+        </div>
+        <!-- who -->
+        <div class="who box">
+          <p class="who__sentence">Kdo slaví svátek dne:</p>
+          <div class="date">
+            <label for="day">den: </label>
+            <input type="text" id="day" />
+          </div>
+          <div class="date">
+            <label for="month"> měsíc: </label>
+            <input type="text" id="month" />
+          </div>
+        </div>
+        <button class="btn" id="btn--who">Odeslat</button>
+        <p class="who__result box__resul"></p>
+        <!-- when -->
+        <div class="when box">
+          <p class="when__sentence">Kdy slaví svátek:</p>
+          <div class="firstname">
+            <label for="name">jméno: </label>
+            <input type="text" id="name" />
+          </div>
+          <button class="btn" id="btn--when">Odeslat</button>
+        </div>
+        <p class="when__result box__resul"></p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

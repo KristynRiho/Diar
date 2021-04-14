@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: rgb(252, 252, 160);
+  --brown: rgb(165, 42, 42);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(248, 248, 248, 0.829);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(214, 213, 213, 0.644);
+  color: var(--brown);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+/* HEADER */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--yellow);
+  border-bottom: 1px solid var(--brown);
+}
+
+.menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--brown);
+  display: inline-block;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.menu li a:active,
+.menu li a:hover {
+  background-color: var(--brown);
+  color: var(--yellow);
+  transition: 0.5s;
+}
+
+h1 {
+  padding: 10px;
+}
+
+/************** MAIN - NAMEDAYS *******************/
+
+.box {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.box__result {
+  font-weight: 600;
+}
+.who,
+.when {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  margin: 35px auto;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.date {
+  margin: 5px;
+}
+.who input {
+  width: 50px;
+  height: 23px;
+  padding-left: 13px;
+}
+.who_result {
+  max-width: 400px;
+}
+
+.btn {
+  padding: 8px 13px;
+  background-color: var(--brown);
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: rgb(201, 49, 49);
+  transition: 0.2s;
+}
+
+.when input {
+  width: 100px;
+  height: 25px;
+  padding-left: 13px;
+}
+
+.firstname {
+  margin: 15px 5px;
+}
+/************** Queries - NAMEDAYS *******************/
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+}
