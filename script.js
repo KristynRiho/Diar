@@ -68,13 +68,21 @@ document.querySelector('#btn--who').addEventListener('click', () => {
 const firstnameElm = document.querySelector('#name');
 const whenElm = document.querySelector('.when__result');
 
-const displayNameWhen = (json) => {
+const displayNameWhen = (svatek) => {
   whenElm.textContent = `${firstnameElm.value} má svátek: 
-  ${json.results[0].day}.${json.results[0].month}.`;
+  ${svatek.day}.${svatek.month}.`;
 };
 
 document.querySelector('#btn--when').addEventListener('click', () => {
   fetch(`https://api.abalin.net/getdate?name=${firstnameElm.value}&country=cz`)
     .then((response) => response.json())
-    .then(displayNameWhen);
+    .then((json) => {
+      const data = json.results;
+      console.log(data);
+      data.forEach((svatek) => {
+        if (svatek.name == firstnameElm.value) {
+          displayNameWhen(svatek);
+        }
+      });
+    });
 });
