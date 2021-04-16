@@ -60,6 +60,9 @@ h1 {
 
 /************** MAIN - NAMEDAYS *******************/
 
+.background-stripe {
+  background-color: rgba(236, 234, 234, 0.829);
+}
 .box {
   margin: 20px;
   display: flex;
@@ -80,6 +83,9 @@ h1 {
 }
 .date {
   margin: 5px;
+}
+.who__sentence {
+  padding-top: 15px;
 }
 .who input {
   width: 50px;
@@ -126,4 +132,19 @@ h1 {
   .box {
     flex-direction: column;
   }
+}
+/* *****BIRTHDAY */
+section {
+  padding: 15px;
+}
+section input {
+  padding: 5px;
+  margin: 5px 0px;
+}
+h4 {
+  margin-bottom: 10px;
+}
+
+ol li {
+  list-style-type: none;
 }

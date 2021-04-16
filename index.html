@@ -18,7 +18,40 @@
         </nav>
         <h1>Můj narozeninový diář</h1>
       </header>
-      <main></main>
+      <main>
+        <section>
+          <h4>V tomto měsící má narozeniny:</h4>
+          <ol class="current-month"></ol>
+        </section>
+
+        <section class="background-stripe">
+          <h4>Kdy má narozeniny:</h4>
+          <label for="fname">jméno</label>
+          <input type="text" id="fname" />
+          <label for="lname">příjmení</label>
+          <input type="text" id="lname" /><br />
+          <button class="btn" id="btn--by-name">Zjistit</button>
+          <div class="birthday-by-name"></div>
+        </section>
+
+        <section>
+          <h4>Výpis všech osob v mém narozeninovém diáři</h4>
+          <button class="btn" id="btn--all">Vypsat osoby</button>
+          <ol class="all-persons"></ol>
+        </section>
+
+        <section class="background-stripe">
+          <h4>Přidání osoby do diáře</h4>
+          <label for="firstname">jméno</label>
+          <input type="text" id="firstname" />
+          <label for="lastname">příjmení</label>
+          <input type="text" id="lastname" /><br />
+          <label for="dateOfBirth">Datum narození:</label>
+          <input type="date" id="dateOfBirth" /><br />
+          <button class="btn" id="btn--add">Přidat osobu</button>
+          <div class="ok-msg"></div>
+        </section>
+      </main>
     </div>
     <script src="script.js"></script>
   </body>

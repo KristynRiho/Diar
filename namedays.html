@@ -30,19 +30,21 @@
           <p class="tomorrow__result box__result"></p>
         </div>
         <!-- who -->
-        <div class="who box">
-          <p class="who__sentence">Kdo slaví svátek dne:</p>
-          <div class="date">
-            <label for="day">den: </label>
-            <input type="text" id="day" />
+        <section class="background-stripe">
+          <div class="who box">
+            <p class="who__sentence">Kdo slaví svátek dne:</p>
+            <div class="date">
+              <label for="day">den: </label>
+              <input type="text" id="day" />
+            </div>
+            <div class="date">
+              <label for="month"> měsíc: </label>
+              <input type="text" id="month" />
+            </div>
           </div>
-          <div class="date">
-            <label for="month"> měsíc: </label>
-            <input type="text" id="month" />
-          </div>
-        </div>
-        <button class="btn" id="btn--who">Odeslat</button>
-        <p class="who__result box__resul"></p>
+          <button class="btn" id="btn--who">Odeslat</button>
+          <p class="who__result box__resul"></p>
+        </section>
         <!-- when -->
         <div class="when box">
           <p class="when__sentence">Kdy slaví svátek:</p>
@@ -55,6 +57,6 @@
         <p class="when__result box__resul"></p>
       </main>
     </div>
-    <script src="script.js"></script>
+    <script src="namedays.js"></script>
   </body>
 </html>
